@@ -1,4 +1,4 @@
-package com.ajithvgiri.gridphoto.Assymetric;
+package com.ajithvgiri.gridphoto.assymetric;
 
 import android.os.Parcel;
 import android.os.Parcelable;

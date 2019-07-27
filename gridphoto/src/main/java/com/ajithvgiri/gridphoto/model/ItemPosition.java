@@ -3,7 +3,7 @@ package com.ajithvgiri.gridphoto.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import androidx.annotation.NonNull;
-import com.ajithvgiri.gridphoto.Assymetric.AsymmetricItem;
+import com.ajithvgiri.gridphoto.assymetric.AsymmetricItem;
 
 
 public class ItemPosition implements AsymmetricItem {

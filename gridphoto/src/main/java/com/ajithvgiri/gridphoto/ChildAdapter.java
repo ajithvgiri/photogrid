@@ -10,8 +10,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
-import com.ajithvgiri.gridphoto.Assymetric.AGVRecyclerViewAdapter;
-import com.ajithvgiri.gridphoto.Assymetric.AsymmetricItem;
+import com.ajithvgiri.gridphoto.assymetric.AGVRecyclerViewAdapter;
+import com.ajithvgiri.gridphoto.assymetric.AsymmetricItem;
 import com.ajithvgiri.gridphoto.model.ItemImage;
 import com.bumptech.glide.Glide;
 

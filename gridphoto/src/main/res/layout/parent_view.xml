@@ -13,7 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-        <com.ajithvgiri.gridphoto.Assymetric.AsymmetricRecyclerView
+        <com.ajithvgiri.gridphoto.assymetric.AsymmetricRecyclerView
                 android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

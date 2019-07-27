@@ -1,4 +1,4 @@
-package com.ajithvgiri.gridphoto.Assymetric;
+package com.ajithvgiri.gridphoto.assymetric;
 
 import android.view.ViewGroup;
 import androidx.recyclerview.widget.RecyclerView;

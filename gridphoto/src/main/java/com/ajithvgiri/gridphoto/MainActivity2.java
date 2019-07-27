@@ -2,9 +2,9 @@ package com.ajithvgiri.gridphoto;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import com.ajithvgiri.gridphoto.Assymetric.AsymmetricRecyclerView;
-import com.ajithvgiri.gridphoto.Assymetric.AsymmetricRecyclerViewAdapter;
-import com.ajithvgiri.gridphoto.Assymetric.Utils;
+import com.ajithvgiri.gridphoto.assymetric.AsymmetricRecyclerView;
+import com.ajithvgiri.gridphoto.assymetric.AsymmetricRecyclerViewAdapter;
+import com.ajithvgiri.gridphoto.assymetric.Utils;
 import com.ajithvgiri.gridphoto.model.ItemImage;
 
 import java.util.ArrayList;

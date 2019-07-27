@@ -1,4 +1,4 @@
-package com.ajithvgiri.gridphoto.Assymetric;
+package com.ajithvgiri.gridphoto.assymetric;
 
 final class RowItem {
   private final AsymmetricItem item;
