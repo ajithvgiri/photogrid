@@ -17,7 +17,7 @@ public class MainActivity2 extends AppCompatActivity {
     public String Image4 = "https://homepages.cae.wisc.edu/~ece533/images/airplane.png";
 
     int currentOffset = 0;
-    int mMaxDisplay_Size =  3;
+    int mMaxDisplay_Size = 2;
     int mTotal_Size = 0;
 
     ArrayList<ItemImage> Pathitems = new ArrayList<>();
@@ -33,11 +33,6 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.parent_view);
 
 
-        prepareMovieData(0);
-
-        mTotal_Size = Pathitems.size();
-
-
         recyclerView = (AsymmetricRecyclerView) findViewById(R.id.recyclerView);
 
 
@@ -47,8 +42,13 @@ public class MainActivity2 extends AppCompatActivity {
         recyclerView.addItemDecoration(new SpacesItemDecoration(getResources().getDimensionPixelSize(R.dimen.recycler_padding)));
 
 
-        ChildAdapter adapter = new ChildAdapter(Pathitems, mMaxDisplay_Size, mTotal_Size,this);
-        recyclerView.setAdapter(new AsymmetricRecyclerViewAdapter<>(this, recyclerView, adapter));
+
+
+
+        prepareMovieData(0);
+
+
+
 
     }
 
@@ -61,29 +61,19 @@ public class MainActivity2 extends AppCompatActivity {
 
         ItemImage i1 = new ItemImage(1,Image1,Image1);
 
-//        i1.setColumnSpan(2);
-//        i1.setRowSpan(2);
-//        i1.setPosition( currentOffset + 0);
-
-        i1.setColumnSpan(3);
+        i1.setColumnSpan(2);
         i1.setRowSpan(3);
         i1.setPosition( currentOffset + 0);
 
         ItemImage i2 = new ItemImage(2,Image2,Image2);
-//        i2.setColumnSpan(1);
-//        i2.setRowSpan(1);
-//        i2.setPosition( currentOffset + 1);
-
-        i2.setColumnSpan(3);
+        i2.setColumnSpan(1);
         i2.setRowSpan(3);
         i2.setPosition( currentOffset + 1);
 
 
         ItemImage i3 = new ItemImage(3,Image3,Image3);
-//        i3.setColumnSpan(1);
-//        i3.setRowSpan(1);
-        i3.setColumnSpan(3);
-        i3.setRowSpan(3);
+        i3.setColumnSpan(1);
+        i3.setRowSpan(1);
         i3.setPosition( currentOffset + 2);
 
         ItemImage i4 = new ItemImage(4,Image4,Image4);
@@ -164,7 +154,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         Pathitems.add(i1);
         Pathitems.add(i2);
-        Pathitems.add(i3);
+//        Pathitems.add(i3);
 //        Pathitems.add(i4);
 //        Pathitems.add(i5);
 //        Pathitems.add(i6);
@@ -181,6 +171,13 @@ public class MainActivity2 extends AppCompatActivity {
         //ItemList itemList = new ItemList(k,"User "+(k+1),mPathitems);
         //mItemList.add(itemList);
         currentOffset += mPathitems.size();
+
+
+        mTotal_Size = Pathitems.size();
+
+
+        ChildAdapter adapter = new ChildAdapter(mPathitems, mMaxDisplay_Size, mTotal_Size,this);
+        recyclerView.setAdapter(new AsymmetricRecyclerViewAdapter<>(this, recyclerView, adapter));
 
     }
 }
